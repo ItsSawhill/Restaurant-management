@@ -8,7 +8,7 @@ export default function Home() {
   const [foodItems, setFoodItems] = useState([])
   const [search, setSearch] = useState('')
   const loadFoodItems = async () => {
-    let response = await fetch("http://localhost:5000/api/auth/foodData", {
+    let response = await fetch("https://violet-viper-kilt.cyclic.app/api/auth/foodData", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
@@ -21,7 +21,7 @@ export default function Home() {
     // console.log(response)
     // console.log(response[0][0].CategoryName)
     setFoodItems(response[0])
-    setFoodCat([{CategoryName :"Biryani/Rice"}])
+    setFoodCat([{CategoryName :"Biryani/Rice"}, {CategoryName: "Main Course"}])
   }
   
   useEffect(() => {
