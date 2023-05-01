@@ -9,7 +9,7 @@ export default function Home() {
   const [search, setSearch] = useState('')
   const loadFoodItems = async () => {
 //     let response = await fetch("https://violet-viper-kilt.cyclic.app/api/auth/foodData", {
-       let response = await fetch("http://127.0.0.1:5000/api/auth/foodData", {
+       let response = await fetch("https://restaurant-api-g7tl.onrender.com/api/auth/foodData", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',
