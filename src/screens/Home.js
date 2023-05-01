@@ -22,6 +22,8 @@ export default function Home() {
     // console.log(response)
     // console.log(response[0][0].CategoryName)
     setFoodItems(response[0])
+    console.log(response)
+    console.log(response[0])
     setFoodCat([{CategoryName :"Biryani/Rice"}, {CategoryName: "Main Course"}])
   }
   
